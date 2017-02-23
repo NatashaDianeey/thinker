@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif; }
 
 header .logotipo .logo {
-  width: 10%;
+  width: 7%;
   display: block;
   margin-top: 3px;
   margin-bottom: 3px;
@@ -71,6 +71,14 @@ body {
   /* Prevent scroll on narrow devices */ }
 
 /* PROJECTS */
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none; }
+
+.navbar .navbar-collapse {
+  text-align: center;
+  padding-bottom: 15px; }
+
 /* NEWS */
 a, a:hover, .btn {
   outline: none !important; }
@@ -260,9 +268,6 @@ header {
   padding-bottom: 30px;
   border: none; }
 
-.navbar-collapse.collapse {
-  margin-left: 35%; }
-
 .navbar-default .navbar-toggle {
   border-color: transparent; }
 
@@ -301,9 +306,9 @@ section.projects .grid {
   flex-wrap: wrap;
   justify-content: center; }
   section.projects .grid-item {
-    min-width: 125px;
-    max-width: 125px;
-    flex: 1 1 125px;
+    min-width: 100px;
+    max-width: 100px;
+    flex: 1 1 100px;
     padding-left: .5rem;
     padding-right: .5rem;
     margin-bottom: 1rem; }
@@ -344,9 +349,6 @@ section.projects .modal-content {
 @media (max-width: 768px) {
   body {
     margin-top: 50px; }
-
-  .navbar-collapse.collapse {
-    margin-left: 0%; }
 
   .navbar-nav {
     text-align: center; } }
