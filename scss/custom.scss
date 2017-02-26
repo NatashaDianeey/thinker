@@ -1,12 +1,101 @@
+/* FUENTES */
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato/Lato-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato/Lato-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato/Lato-Bold.svg#eea591db52cf6ebc8992abb7621b9256') format('svg'); /* Legacy iOS */
+    font-style:   normal;
+    font-weight:  700;
+}
+
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('../fonts/lato/Lato-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato/Lato-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato/Lato-Regular.svg#48e70b8825d557df57af3e4f7d4c31be') format('svg'); /* Legacy iOS */     
+    font-style:   normal;
+    font-weight:  400;
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../fonts/lato/Lato-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato/Lato-Light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato/Lato-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato/Lato-Light.svg#80d8021909d835b751af094d043ad177') format('svg'); /* Legacy iOS */     
+    font-style:   normal;
+    font-weight:  200;
+}
+
+@font-face {
+    font-family: 'Lato Hairline';
+    src: url('../fonts/lato/Lato-Hairline.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/lato/Lato-Hairline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/lato/Lato-Hairline.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/lato/Lato-Hairline.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/lato/Lato-Hairline.svg#477d11e773543baa2ffc5ab40fca9623') format('svg'); /* Legacy iOS */     
+    font-style:   normal;
+    font-weight:  400;
+}
+
+/*PRIDI*/
+@font-face {
+  font-family: 'Pridi';
+  src: url('../fonts/pridi/Pridi-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/pridi/Pridi-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pridi/Pridi-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pridi/Pridi-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pridi/Pridi-Regular.svg#4b1221af6b5d195812d62cf5da34f409') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Pridi Medium';
+  src: url('../fonts/pridi/Pridi-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/pridi/Pridi-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pridi/Pridi-Medium.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pridi/Pridi-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pridi/Pridi-Medium.svg#5e31b26e69a0772e6880d28d7c198a39') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Pridi Light';
+  src: url('../fonts/pridi/Pridi-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/pridi/Pridi-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pridi/Pridi-Light.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pridi/Pridi-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pridi/Pridi-Light.svg#7d7aef4b2244f7e28762a56ed04b6482') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  200;
+}
+
+
+
+$azul: #0054e2;
+
+
 
 body {
-  color: #0054e3;
-  font-family: 'Open Sans',Arial,sans-serif;
-  font-size: 15px;
+    color: $azul;
+    font-family: 'Lato Regular';
+    font-size: 15px;
     margin-top: 170px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 h1,h2,h3,h4,h5{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato';
 }
 
 header{
@@ -33,11 +122,10 @@ header{
         background-color: #fff;
         border-color: #e7e7e7;
         .navbar-nav>li>a {
-            color: #0054e3;
+            color:#0054e280;
             font-weight: 100;
-            &:hover{
-                color: #0054e3;
-                font-weight: 600;
+            &:hover, &:active{
+                color: $azul;
             }
         }
     }
@@ -90,7 +178,12 @@ header{
     }    
 }
 
-
+section.slideHome{
+    span.tag{
+        font-family: 'Pridi Medium';
+        font-size: 18px;
+    }
+}
 
     .imagen{
        object-fit: cover;
@@ -107,6 +200,23 @@ body {
 }
 
 
+section.newsHome{
+    .boxPad{
+        h1{
+            font-family: 'Lato Regular';
+        }
+        h3{
+            font-family: 'Pridi';
+        }
+    }
+}
+
+
+
+
+
+
+
 
 
 
@@ -119,11 +229,82 @@ body {
 
 
 /* PROJECTS */
+section.projectsHome{
+    .carousel-caption {
+        position: absolute;
+        bottom: 60px;
+        left: 10%;
+        z-index: 10;
+        padding-top: 20px;
+        color: #0054e2;
+        text-shadow: 0 1px 2px rgba(0,0,0,.0);
+        text-align: left;
+        padding-bottom: 30px;
+        h2{
+            font-size: 3em;
+            font-family: 'Lato Regular';
+        }
+    }
+}
 
 
 
 
 
+
+/* ABOUT */
+section.about{
+    h3{
+        padding-top: 20px;
+        font-family: 'Lato Regular';
+    }
+}
+
+
+/* SERVICES */
+section.services{
+    .carousel-caption {
+        position: absolute;
+        bottom: 20px;
+        left: 5%;
+        z-index: 10;
+        padding-top: 20px;
+        color: #0054e2;
+        text-shadow: 0 1px 2px rgba(0,0,0,.0);
+        text-align: left;
+        padding-bottom: 30px;
+        h1{
+            font-family: 'Lato Light';
+            font-size: 5em;
+        }
+    }
+}
+.frase{
+    h3{
+        font-family: 'Lato Regular';
+        font-size: 2em;
+        padding: 5px 155px;
+    }
+}
+.boxPad{
+        padding: 0px 30px 0px 30px;
+    h3{
+        font-family: 'Lato Light';
+        font-size: 3em;
+        padding-bottom: 15px;
+    }
+    p{
+        font-size: 1.5em;
+    }
+}
+.box-thiknker{
+    text-align: center;
+   
+    img{
+        width: 30%;
+        height: auto;
+    }
+}
 
 
 
@@ -183,6 +364,7 @@ section{
     margin: 10px 0 5px; 
     line-height: 27px; 
     color: #141517;
+    
 }
 .title-small { 
     color: #141517; 
@@ -198,7 +380,11 @@ section{
 .title-large a, 
 .title-small a, 
 .title-x-small a{
-    color: inherit
+        color: #0054e2;
+        font-family: 'lato';
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.4em;
 }
 .banner-sec{
     float: left; 
@@ -206,21 +392,24 @@ section{
     background: #fff
 }
 .card-block{
-    padding:0 10px 10px;
+    padding:0px;
 }
 .card-text{
     margin: 0
 }
-.text-time{
-    color: #ff0000; 
-    font-weight: 600;
+.text-time {
+    color: #0054e2;
+    font-weight: 100;
 }
 .banner-sec 
 .card-img-overlay{
-    padding: 0; 
-    top: 3px; 
-    left: 7px; 
-    height: 20%
+    padding: 10px 35px;
+    top: 0px;
+    height: auto;
+    position: absolute;
+    right: 15px;
+    background: rgba(255, 255, 255, 0.72);
+    left: inherit;
 }
 img{
     width: 100%;}
@@ -232,7 +421,7 @@ header{
     border-bottom: 1px solid #2b2b2b;
     float: left; 
     width: 100%; 
-    background: #000
+    background: #000;
 }
 
 .top-head .admin-bar img {
@@ -262,7 +451,33 @@ header{
     width:100%;
 }
 .banner-sec .news-block{
-    margin-bottom: 20px
+    margin-bottom: 50px;
+    .news-conten{
+        margin: 10px 0px;
+        .news-title{
+            padding: 10px 0px;
+            h2 a{
+                font-family: 'Pridi Medium';
+                font-size: 1.2em;
+                &:hover{
+                    text-decoration: none;
+                }
+                h5{
+                    font-family: 'Lato Light'
+                }
+            }
+            
+        }
+        
+        .news-des{
+            padding: 0px 0px 10px 0px;
+        }
+        .time-text{
+            padding-bottom: 30px;
+        }
+    }
+        
+        
 }
 .banner-sec .news-block:last-child{
     margin-bottom: 0px
@@ -271,7 +486,7 @@ header{
     margin-bottom: 5px;
 }
 .banner-sec .title-large{
-    margin: 18px 0 0
+    margin: 18px 0 0;
 }
 .banner-sec .time{
     margin-top: 0px;
@@ -281,7 +496,7 @@ header{
     background: none;
 }
 .banner-sec .card{
-    margin-bottom:20px;
+    margin-bottom:70px;
 }
 
 .section-01{
@@ -388,6 +603,53 @@ header{
 
 
 
+
+
+/* CONTACT */
+section.contact{
+    h3{
+        font-family: 'Lato Regular';
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+    
+   
+    
+    ul li{
+        list-style: none;
+        span{
+            font-size: 3em;
+            padding-right: 1em;
+            padding-bottom: 1em;
+        }
+        a{
+             img{
+                width: 40px;
+                height: auto;
+                margin-bottom: 20px;
+                margin-right: 20px;
+            }
+            &:hover{
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }  
+    }
+    .iconThinkerContact{
+        width: 60px;
+        height: auto;
+        margin-bottom: 20px;
+        margin-left: 30px;
+        margin-right: 15px;
+    }
+}
+
+
+
+
+
+
+
 section.projects{
     
     *, *:before, *:after {
@@ -445,6 +707,7 @@ section.projects{
                 img{
                     display: block;
                     max-width: 100%;
+                    padding: 20px;
                 }
             }
 
@@ -467,7 +730,46 @@ section.projects{
     border: 0px solid rgba(0,0,0,.0);
     border-radius: 0px;
 }
+   
 }
+.modal {
+    top: 140px;
+}
+ .modal-open .modal {
+    overflow-x: hidden;
+}
+.modal-dialog {
+    margin: 0px auto;
+}
+.modal-backdrop.in {
+    opacity: 0;
+}
+
+
+.news-title{
+    text-align: center;
+    padding: 10px 0px;
+    h2 a{
+        font-family: 'Pridi';
+        font-size: 1.2em;
+        &:hover{
+            text-decoration: none;
+        }
+
+    }
+     h5{
+            font-family: 'Lato Light';
+            text-align: left;
+        }
+}
+
+
+
+
+
+
+
+
 
 
 
