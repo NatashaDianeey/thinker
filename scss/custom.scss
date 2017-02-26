@@ -122,7 +122,7 @@ header{
         background-color: #fff;
         border-color: #e7e7e7;
         .navbar-nav>li>a {
-            color:#0054e280;
+            color:#7598cc;
             font-weight: 100;
             &:hover, &:active{
                 color: $azul;
@@ -182,6 +182,21 @@ section.slideHome{
     span.tag{
         font-family: 'Pridi Medium';
         font-size: 18px;
+    }
+    .carousel-caption {
+        position: absolute;
+        bottom: 20px;
+        left: 5%;
+        z-index: 10;
+        padding-top: 20px;
+        color: #0054e2;
+        text-shadow: 0 1px 2px rgba(0,0,0,.0);
+        text-align: left;
+        padding-bottom: 30px;
+        h1{
+            font-family: 'Lato Light';
+            font-size: 5em;
+        }
     }
 }
 
@@ -278,6 +293,16 @@ section.services{
             font-size: 5em;
         }
     }
+    .boxPad{
+         h3{
+        font-family: 'Lato Light';
+        font-size: 3em;
+        padding-bottom: 15px;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    }
 }
 .frase{
     h3{
@@ -288,14 +313,7 @@ section.services{
 }
 .boxPad{
         padding: 0px 30px 0px 30px;
-    h3{
-        font-family: 'Lato Light';
-        font-size: 3em;
-        padding-bottom: 15px;
-    }
-    p{
-        font-size: 1.5em;
-    }
+   
 }
 .box-thiknker{
     text-align: center;
@@ -768,10 +786,31 @@ section.projects{
 
 
 
+.text-news{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+     
+    img{
+        width: 60%;
+height: auto;
+margin-left: 190px;
+   
+   
+   
+    }
+    h3{
+        margin-left: 0%;
+        display: inline;
+    }
+}
 
 
+   
 
-
+.imgDetalle{
+padding: 0px 150px;
+}
 
 
 

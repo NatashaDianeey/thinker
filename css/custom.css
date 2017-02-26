@@ -81,7 +81,7 @@ header .navbar-default {
   background-color: #fff;
   border-color: #e7e7e7; }
   header .navbar-default .navbar-nav > li > a {
-    color: #0054e280;
+    color: #7598cc;
     font-weight: 100; }
     header .navbar-default .navbar-nav > li > a:hover, header .navbar-default .navbar-nav > li > a:active {
       color: #0054e2; }
@@ -121,6 +121,19 @@ header .navbar-container {
 section.slideHome span.tag {
   font-family: 'Pridi Medium';
   font-size: 18px; }
+section.slideHome .carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 5%;
+  z-index: 10;
+  padding-top: 20px;
+  color: #0054e2;
+  text-shadow: 0 1px 2px transparent;
+  text-align: left;
+  padding-bottom: 30px; }
+  section.slideHome .carousel-caption h1 {
+    font-family: 'Lato Light';
+    font-size: 5em; }
 
 .imagen {
   object-fit: cover;
@@ -172,6 +185,12 @@ section.services .carousel-caption {
   section.services .carousel-caption h1 {
     font-family: 'Lato Light';
     font-size: 5em; }
+section.services .boxPad h3 {
+  font-family: 'Lato Light';
+  font-size: 3em;
+  padding-bottom: 15px; }
+section.services .boxPad p {
+  font-size: 1.5em; }
 
 .frase h3 {
   font-family: 'Lato Regular';
@@ -180,12 +199,6 @@ section.services .carousel-caption {
 
 .boxPad {
   padding: 0px 30px 0px 30px; }
-  .boxPad h3 {
-    font-family: 'Lato Light';
-    font-size: 3em;
-    padding-bottom: 15px; }
-  .boxPad p {
-    font-size: 1.5em; }
 
 .box-thiknker {
   text-align: center; }
@@ -540,6 +553,21 @@ section.projects .modal-content {
   .news-title h5 {
     font-family: 'Lato Light';
     text-align: left; }
+
+.text-news {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10%; }
+  .text-news img {
+    width: 60%;
+    height: auto;
+    margin-left: 190px; }
+  .text-news h3 {
+    margin-left: 0%;
+    display: inline; }
+
+.imgDetalle {
+  padding: 0px 150px; }
 
 @media (max-width: 768px) {
   body {
