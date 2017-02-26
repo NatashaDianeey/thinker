@@ -439,7 +439,7 @@ header {
   margin-bottom: 10px; }
 
 .logofooter {
-  width: 110px;
+  width: 150px;
   height: auto;
   margin-top: 8px; }
 
@@ -603,7 +603,10 @@ section.projects .modal-content {
   .text-news img {
     width: 80%;
     height: auto;
-    margin-left: 10%; } }
+    margin-left: 10%; }
+
+  .logofooter {
+    width: 110px; } }
 @media (max-width: 360px) {
   header .logotipo .logo {
     width: 20%; } }
