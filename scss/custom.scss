@@ -844,7 +844,25 @@ header .logotipo .logo {
 
     .navbar-nav {
         text-align: center;
+
     }
+    
+    
+    .imgDetalle {
+    padding: 0px;
+}
+    .text-news {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+    .text-news img {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+}
+    
+    
 }
 
 @media (max-width: 360px) {

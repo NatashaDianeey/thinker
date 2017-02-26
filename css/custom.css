@@ -590,7 +590,20 @@ section.projects .modal-content {
     height: auto; }
 
   .navbar-nav {
-    text-align: center; } }
+    text-align: center; }
+
+  .imgDetalle {
+    padding: 0px; }
+
+  .text-news {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%; }
+
+  .text-news img {
+    width: 80%;
+    height: auto;
+    margin-left: 10%; } }
 @media (max-width: 360px) {
   header .logotipo .logo {
     width: 20%; } }
