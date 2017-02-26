@@ -426,7 +426,10 @@ header {
   border: none; }
 
 .navbar-default .navbar-toggle {
-  border-color: transparent; }
+  border-color: #0054e2; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #0054e2; }
 
 .navbar-nav {
   text-align: center; }
@@ -572,6 +575,19 @@ section.projects .modal-content {
 @media (max-width: 768px) {
   body {
     margin-top: 50px; }
+
+  .frase h3 {
+    padding: 5px 5px; }
+
+  .boxPad {
+    padding: 0px; }
+
+  header .logotipo .logo {
+    width: 15%; }
+
+  .box-thiknker img {
+    width: 70%;
+    height: auto; }
 
   .navbar-nav {
     text-align: center; } }
