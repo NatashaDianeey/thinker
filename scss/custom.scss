@@ -90,7 +90,7 @@ body {
     color: $azul;
     font-family: 'Lato Regular';
     font-size: 15px;
-    margin-top: 170px;
+    margin-top: 110px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -104,7 +104,7 @@ header{
         .logo{
             width: 7%;
            display: block;
-            margin-top: 3px;
+            margin-top: 15px;
             margin-bottom: 3px;
             margin-left: auto;
             margin-right: auto;
@@ -129,6 +129,11 @@ header{
             }
         }
     }
+    
+    .navbar-nav>li>a:active {
+        color: $azul !important;
+    }
+    
     .navbar-brand {
         font-size: 24px;
     }
@@ -591,7 +596,7 @@ header{
     .logofooter{
         width: 150px;
         height: auto;
-        margin-top: 8px;
+        margin: 12px 0px;
     }
 .navbar-default {
     background-color: #fff;
@@ -723,7 +728,7 @@ section.projects{
             figure{
                 padding: 0;
                 margin: 0;
-                box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.05);
+                box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.00);
 
                 img{
                     display: block;
@@ -758,14 +763,22 @@ section.projects{
 }
  .modal-open .modal {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .modal-dialog {
     margin: 0px auto;
-}
-.modal-backdrop.in {
-    opacity: 0;
+    padding: 0px 50px 70px 50px;
 }
 
+.modal-backdrop {
+    background-color: #fff;
+     
+      
+    
+}
+.modal-backdrop.in{
+    opacity: 0.8;
+}
 
 .news-title{
     text-align: center;
