@@ -93,10 +93,14 @@ body {
     margin-top: 110px;
     margin-left: 25px;
     margin-right: 25px;
+    margin-bottom: 50px;
 }
 h1,h2,h3,h4,h5{
     font-family: 'Lato';
 }
+
+
+   
 
 header{
     .logotipo{
@@ -124,36 +128,21 @@ header{
         .navbar-nav>li>a {
             color:#7598cc;
             font-weight: 100;
-            &:hover, &:active{
+            &:hover{
                 color: $azul;
             }
         }
     }
-    
-    .navbar-nav>li>a:active {
-        color: $azul !important;
-    }
-    
     .navbar-brand {
         font-size: 24px;
     }
+     
+     
     
-    .navbar-brand-centered {
-        position: absolute;
-        left: 50%;
-        display: block;
-        text-align: center;
-        background-color: transparent;
-    }
-    .navbar-brand-centered h3{
-        margin:0;
-        margin-left: -30px;
-        margin-top:-2px
-    }
-    .navbar>.container .navbar-brand-centered,
-    .navbar>.container-fluid .navbar-brand-centered {
-        margin-left: -80px;
-    }
+    
+    
+
+
     
     .navbar-container {
         padding: 20px 0 20px 0;
@@ -180,8 +169,16 @@ header{
     .navbar-container{
         transition: 0.8s;
         -webkit-transition:  0.8s;
-    }    
+    } 
+    
+    
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+        color: $azul;
+        background-color: transparent;
+    }
 }
+
+
 
 section.slideHome{
     span.tag{
@@ -195,12 +192,12 @@ section.slideHome{
         z-index: 10;
         padding-top: 20px;
         color: #0054e2;
-        text-shadow: 0 1px 2px rgba(0,0,0,.0);
+        text-shadow: 0 0px 0px rgba(0,0,0,0) !important;
         text-align: left;
         padding-bottom: 30px;
         h1{
             font-family: 'Lato Light';
-            font-size: 5em;
+            font-size: 4.5em;
         }
     }
 }
@@ -257,7 +254,7 @@ section.projectsHome{
         z-index: 10;
         padding-top: 20px;
         color: #0054e2;
-        text-shadow: 0 1px 2px rgba(0,0,0,.0);
+        text-shadow: 0 0px 0px rgba(0,0,0,0) !important;
         text-align: left;
         padding-bottom: 30px;
         h2{
@@ -274,46 +271,51 @@ section.projectsHome{
 
 /* ABOUT */
 section.about{
+    h1{
+        font-family: 'Pridi Medium';
+    }
     h3{
         padding-top: 20px;
         font-family: 'Lato Regular';
     }
+    
 }
 
 
 /* SERVICES */
 section.services{
     .carousel-caption {
-        position: absolute;
-        bottom: 20px;
-        left: 5%;
-        z-index: 10;
-        padding-top: 20px;
-        color: #0054e2;
-        text-shadow: 0 1px 2px rgba(0,0,0,.0);
-        text-align: left;
-        padding-bottom: 30px;
+           position: absolute;
+            bottom: 350px;
+            left: 4%;
+            z-index: 10;
+            color: #fff;
+            text-shadow: 0 0px 0px rgba(0,0,0,0) !important;
+            text-align: left;
+            font-size: 0.8em;
         h1{
             font-family: 'Lato Light';
             font-size: 5em;
         }
     }
     .boxPad{
-         h3{
-        font-family: 'Lato Light';
+        h3{
+        font-family: 'Pridi';
         font-size: 3em;
         padding-bottom: 15px;
-    }
-    p{
-        font-size: 1.5em;
-    }
+        }
+        p{
+            font-size: 1.5em;
+            padding: 0px 150px 0px 150px;
+        }
     }
 }
 .frase{
-    h3{
+    h4{
         font-family: 'Lato Regular';
-        font-size: 2em;
-        padding: 5px 155px;
+        font-size: 1.8em;
+        padding: 5px 20%;
+        line-height: inherit;
     }
 }
 .boxPad{
@@ -347,6 +349,7 @@ section.services{
     text-align: center;
     padding-bottom: 15px;
 }
+
 
 
 
@@ -389,10 +392,11 @@ section{
     color: #141517;
     
 }
+
 .title-small { 
-    color: #141517; 
-    font-size: 16px; 
-    font-weight: 400; 
+    color: #0054e2; 
+    font-family:'Lato Regular';
+    font-size: 1.3em;
     line-height: 23px; 
     margin: 6px 0 0;
 }
@@ -409,6 +413,18 @@ section{
         text-align: center;
         font-size: 1.4em;
 }
+
+.news-title h2.title-large{
+   color: #0054e2;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: 'Pridi Medium';
+}
+
+
 .banner-sec{
     float: left; 
     width: 100%; 
@@ -423,19 +439,27 @@ section{
 .text-time {
     color: #0054e2;
     font-weight: 100;
+    font-family: 'Lato Light';
 }
 .banner-sec 
 .card-img-overlay{
-    padding: 10px 35px;
+    color: #0054e2;
+    font-family: 'Pridi';
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 10px 15px;
     top: 0px;
     height: auto;
     position: absolute;
     right: 15px;
-    background: rgba(255, 255, 255, 0.72);
     left: inherit;
+    span{
+        font-size: 1.2em;
+    }
 }
 img{
-    width: 100%;}
+    width: 100%;
+}
 header{
     float: left; 
     width:100%
@@ -456,8 +480,8 @@ header{
 
 
 .top-slider .carousel-indicators{bottom: 0}
-.top-slider .carousel-indicators li{border:1px solid #fff;}
-.top-slider .carousel-indicators .active{background:#fff;}
+.top-slider .carousel-indicators li{border:1px solid $azul;}
+.top-slider .carousel-indicators .active{background:$azul;}
 
 
 .side-bar .nav-tabs{border-bottom:none;}
@@ -480,13 +504,15 @@ header{
         .news-title{
             padding: 10px 0px;
             h2 a{
-                font-family: 'Pridi Medium';
+                font-family: 'Pridi';
                 font-size: 1.2em;
+                font-weight: 100;
+                text-align: left;
                 &:hover{
                     text-decoration: none;
                 }
                 h5{
-                    font-family: 'Lato Light'
+                    font-family: 'Lato Light';
                 }
             }
             
@@ -494,9 +520,14 @@ header{
         
         .news-des{
             padding: 0px 0px 10px 0px;
+            h5{
+                font-family: 'Lato Light';
+                font-size: 16px;
+            }
         }
         .time-text{
             padding-bottom: 30px;
+            font-family: 'Lato Light';
         }
     }
         
@@ -526,7 +557,7 @@ header{
     float: left; 
     width: 100%;  
     border-top: 1px solid #d5d5d5; 
-    border-bottom: 1px solid #d5d5d5
+    border-bottom: 1px solid #d5d5d5;
 }
 .section-01 .heading-large {
     border-bottom: 2px solid #222; 
@@ -562,10 +593,15 @@ header{
 
 
     
-
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
 
 .navbar-default .navbar-toggle {
-    border-color: #0054e2;
+    border-color: transparent;
+}
+navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color:  transparent;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #0054e2;
@@ -594,9 +630,9 @@ header{
 
 
     .logofooter{
-        width: 150px;
+        width: 190px;
         height: auto;
-        margin: 12px 0px;
+        margin: 0px 0px;
     }
 .navbar-default {
     background-color: #fff;
@@ -633,13 +669,13 @@ header{
 
 /* CONTACT */
 section.contact{
+    padding: 0px;
     h3{
         font-family: 'Lato Regular';
         margin-left: 40px;
         margin-bottom: 30px;
+        margin-top: 90px;
     }
-    
-   
     
     ul li{
         list-style: none;
@@ -649,6 +685,9 @@ section.contact{
             padding-bottom: 1em;
         }
         a{
+            color: $azul;
+            font-size: 1.3em;
+            font-family: 'Lato Light';
              img{
                 width: 40px;
                 height: auto;
@@ -656,10 +695,16 @@ section.contact{
                 margin-right: 20px;
             }
             &:hover{
-                font-weight: 700;
+                font-family: 'Lato Regular';
                 text-decoration: none;
             }
         }  
+    }
+    .contactCity{
+        color: $azul;
+        font-size: 1.3em;
+        font-family: 'Lato Light';
+        display: inline;
     }
     .iconThinkerContact{
         width: 60px;
@@ -683,7 +728,7 @@ section.projects{
       -moz-box-sizing: border-box;
       box-sizing: border-box;
     }
-
+    padding: 10px 0;
     // Flexbox Grid
     .grid{
         max-width: 1000px;
@@ -704,7 +749,7 @@ section.projects{
 
     // Styles
     .wrapper{
-        min-height: 100vh;
+        min-height:auto;
         padding: 2rem 0;
         color: #e4e4e8;
         font-family: 'Roboto', sans-serif;
@@ -733,7 +778,7 @@ section.projects{
                 img{
                     display: block;
                     max-width: 100%;
-                    padding: 20px;
+                    padding: 10px;
                 }
             }
 
@@ -761,6 +806,11 @@ section.projects{
 .modal {
     top: 140px;
 }
+.modal-lg {
+    width: 800px;
+}
+
+
  .modal-open .modal {
     overflow-x: hidden;
     overflow-y: hidden;
@@ -768,6 +818,33 @@ section.projects{
 .modal-dialog {
     margin: 0px auto;
     padding: 0px 50px 70px 50px;
+    
+    /*Contenido en imagen dentro Modal*/
+    .carousel-inner{
+        .container .carousel-caption{
+            text-align: left;
+            left: 10%;
+            top: 35%;
+           
+            img{
+                width: 100%;
+                display: inline;
+                text-align: left;
+            }
+            h2{
+                font-family: 'Lato Light';
+                font-size: 2em;
+                color: $azul;
+                text-shadow: none !important;
+            }
+            p{
+                color: $azul;
+                text-align: left;
+                text-shadow: none !important;
+                padding-right: 35%;
+            }
+        }
+    }
 }
 
 .modal-backdrop {
@@ -781,20 +858,22 @@ section.projects{
 }
 
 .news-title{
-    text-align: center;
+    text-align:left;
     padding: 10px 0px;
-    h2 a{
-        font-family: 'Pridi';
+    h2{
+        font-family: 'Pridi Medium';
         font-size: 1.2em;
+        text-align: center;
+        letter-spacing: 5px;
         &:hover{
             text-decoration: none;
         }
-
     }
      h5{
-            font-family: 'Lato Light';
-            text-align: left;
-        }
+        font-family: 'Lato Light';
+        font-size: 16px;
+         color: $azul;
+    }
 }
 
 
@@ -825,15 +904,56 @@ margin-left: 190px;
    
 
 .imgDetalle{
-padding: 0px 150px;
+padding: 50px 150px;
 }
 
-
+@media (max-width: 767px) {
+    header .logotipo .logo {
+    width: 15%;
+}
+     header .logotipo .logo {
+        margin-top: -55px;
+    }
+    .navbar-brand {
+        height: 50px;
+    }
+    .modal-lg {
+        width: 100%;
+    }
+}
+@media (max-width: 991px) {
+    section.newsDet{
+        .imgDetalle {
+        padding: 40px 0px; 
+        }
+        .text-news {
+            margin-left: 10%;
+            margin-right: 10%;
+            img {
+                margin-left: 100px;
+            }
+        }
+    }
+}
 
 @media (max-width: 768px) {
-    body {
-    margin-top: 50px;
+    .modal-dialog {
+        margin: 0px auto;
+        padding: 0px 20px 70px 20px;
     }
+    .navbar-collapse {
+    border-color: #e7e7e7;
+    background: rgba(0, 84, 226, 0.2);
+    border-bottom: 2px solid #fff;
+        a{
+            border-bottom: 1px solid #fff;}
+        }
+    body {
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+   
    
 .frase h3 {
    
@@ -844,9 +964,18 @@ padding: 0px 150px;
      padding: 0px;
 }
 
-header .logotipo .logo {
-    width: 15%;
-}
+    section.contact {
+        h3 {
+        margin-top: 60px;
+        text-align: center;
+        }
+        ul li{
+            margin-left: 30%;
+        }
+        .iconThinkerContact {
+            margin-left: 35%;
+        }
+    }
 
 
 .box-thiknker img {
@@ -860,22 +989,113 @@ header .logotipo .logo {
 
     }
     
+    section.newsDet{
+        .imgDetalle {
+            padding: 30px 0px;
+        }
+        .text-news {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 10%;
+            img {
+                width: 80%;
+                height: auto;
+                margin-left: 10%;
+            }
+        }
+
+    }
     
-    .imgDetalle {
-    padding: 0px;
+    .logofooter {
+        width: 160px;
+        padding: 5px 0px;
+    }
+    .banner-sec .card {
+        margin-bottom: 20px;
+    }
+    section.services .boxPad{
+        p {
+            font-size: 1em;
+            padding: 0px 10px 0px 10px;
+        } 
+        h3{
+            font-size: 1.9em;
+        }
+        
+    } 
+    .frase h4 {
+        font-size: 1.1em;
+        padding: 5px 5%;
+    }
+    
 }
-    .text-news {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
+
+@media (max-width: 640px) {
+    header .logotipo .logo {
+    width: 15%;
 }
-    .text-news img {
-    width: 80%;
-    height: auto;
-    margin-left: 10%;
-}
-    .logofooter{
-        width: 110px;
+     header .logotipo .logo {
+        margin-top: -55px;
+    }
+    .navbar-brand {
+        height: 0px;
+    }
+    
+    section.contact {
+        ul li{
+            margin-left: 20%;
+            a{
+                font-size: 16px;
+            }
+        }
+        .iconThinkerContact {
+            margin-bottom: 20px;
+            margin-left: 25%;
+        }
+        .contactCity{
+             font-size: 16px;
+         }
+         
+    }
+    section.contact {
+        h3 {
+        margin-top: 40px;
+        }
+    }
+    .news-title {
+        h5 {
+            padding: 0px 10px;
+        }
+    }
+    p.card-text{
+            padding: 0px 10px;
+        }
+    section.newsDet{
+        .imgDetalle {
+            padding: 20px 0px;
+        }
+        .text-news {
+           
+            img {
+                width: 100%;
+                height: auto;
+                margin-left: 0%;
+            }
+        }
+
+    }
+    .logofooter {
+        width: 120px;
+        padding: 5px 0px;
+    }
+    section.about {
+        h1 {
+            font-size: 1.8em;
+        }
+        h3{
+            font-size: 20px;
+        }
+        
     }
     
 }
@@ -884,4 +1104,27 @@ header .logotipo .logo {
     header .logotipo .logo {
         width: 20%;
     }
+     section.contact {
+        ul li{
+            margin-left: 0%;
+            a{
+                font-size: 14px;
+                img {
+                    width: 30px;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .iconThinkerContact {
+            width: 40px;
+            height: auto;
+            margin-bottom: 20px;
+            margin-left: 40px;
+        }
+         .contactCity{
+             font-size: 14px;
+         }
+    }
+
 }
