@@ -89,7 +89,7 @@ $azul: #0054e2;
 body {
     color: $azul;
     font-family: 'Lato Regular';
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 110px;
     margin-left: 25px;
     margin-right: 25px;
@@ -305,8 +305,9 @@ section.services{
         padding-bottom: 15px;
         }
         p{
-            font-size: 1.5em;
+            font-size: 1.3em;
             padding: 0px 150px 0px 150px;
+            text-align: justify;
         }
     }
 }
@@ -907,20 +908,7 @@ margin-left: 190px;
 padding: 50px 150px;
 }
 
-@media (max-width: 767px) {
-    header .logotipo .logo {
-    width: 15%;
-}
-     header .logotipo .logo {
-        margin-top: -55px;
-    }
-    .navbar-brand {
-        height: 50px;
-    }
-    .modal-lg {
-        width: 100%;
-    }
-}
+
 @media (max-width: 991px) {
     section.newsDet{
         .imgDetalle {
@@ -935,19 +923,21 @@ padding: 50px 150px;
         }
     }
 }
-
+@media (width: 769px){
+.navbar-collapse {
+        border-color: #e7e7e7;
+        background: rgba(0, 84, 226, 0.2);
+        border-bottom: 2px solid #fff;
+        a{
+            border-bottom: 1px solid #fff;}
+        }
+}
 @media (max-width: 768px) {
     .modal-dialog {
         margin: 0px auto;
         padding: 0px 20px 70px 20px;
     }
-    .navbar-collapse {
-    border-color: #e7e7e7;
-    background: rgba(0, 84, 226, 0.2);
-    border-bottom: 2px solid #fff;
-        a{
-            border-bottom: 1px solid #fff;}
-        }
+   
     body {
         margin-top: 50px;
         margin-left: 0px;
@@ -1029,7 +1019,21 @@ padding: 50px 150px;
     }
     
 }
-
+@media (max-width: 767px) {
+    header .logotipo .logo {
+    width: 15%;
+}
+     header .logotipo .logo {
+        margin-top: -55px;
+    }
+    .navbar-brand {
+        height: 50px;
+    }
+    .modal-lg {
+        width: 100%;
+    }
+     
+}
 @media (max-width: 640px) {
     header .logotipo .logo {
     width: 15%;

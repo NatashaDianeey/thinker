@@ -59,7 +59,7 @@
 body {
   color: #0054e2;
   font-family: 'Lato Regular';
-  font-size: 15px;
+  font-size: 16px;
   margin-top: 110px;
   margin-left: 25px;
   margin-right: 25px;
@@ -182,8 +182,9 @@ section.services .boxPad h3 {
   font-size: 3em;
   padding-bottom: 15px; }
 section.services .boxPad p {
-  font-size: 1.5em;
-  padding: 0px 150px 0px 150px; }
+  font-size: 1.3em;
+  padding: 0px 150px 0px 150px;
+  text-align: justify; }
 
 .frase h4 {
   font-family: 'Lato Regular';
@@ -638,18 +639,6 @@ section.projects .modal-content {
 .imgDetalle {
   padding: 50px 150px; }
 
-@media (max-width: 767px) {
-  header .logotipo .logo {
-    width: 15%; }
-
-  header .logotipo .logo {
-    margin-top: -55px; }
-
-  .navbar-brand {
-    height: 50px; }
-
-  .modal-lg {
-    width: 100%; } }
 @media (max-width: 991px) {
   section.newsDet .imgDetalle {
     padding: 40px 0px; }
@@ -658,17 +647,17 @@ section.projects .modal-content {
     margin-right: 10%; }
     section.newsDet .text-news img {
       margin-left: 100px; } }
-@media (max-width: 768px) {
-  .modal-dialog {
-    margin: 0px auto;
-    padding: 0px 20px 70px 20px; }
-
+@media (width: 769px) {
   .navbar-collapse {
     border-color: #e7e7e7;
     background: rgba(0, 84, 226, 0.2);
     border-bottom: 2px solid #fff; }
     .navbar-collapse a {
-      border-bottom: 1px solid #fff; }
+      border-bottom: 1px solid #fff; } }
+@media (max-width: 768px) {
+  .modal-dialog {
+    margin: 0px auto;
+    padding: 0px 20px 70px 20px; }
 
   body {
     margin-top: 50px;
@@ -723,6 +712,18 @@ section.projects .modal-content {
   .frase h4 {
     font-size: 1.1em;
     padding: 5px 5%; } }
+@media (max-width: 767px) {
+  header .logotipo .logo {
+    width: 15%; }
+
+  header .logotipo .logo {
+    margin-top: -55px; }
+
+  .navbar-brand {
+    height: 50px; }
+
+  .modal-lg {
+    width: 100%; } }
 @media (max-width: 640px) {
   header .logotipo .logo {
     width: 15%; }
